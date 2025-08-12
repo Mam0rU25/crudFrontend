@@ -5,7 +5,7 @@ const API_URL = "http://localhost:8080/api/category";
         return res.json();
     }
 
-    export async function createCategories (data){//"data" son los datos que se guardan
+    export async function createCategory (data){//"data" son los datos que se guardan
         await fetch(`${API_URL}/newCategory`,{
             method: "POST", 
             headers: { "Content-Type": "application/json" },
